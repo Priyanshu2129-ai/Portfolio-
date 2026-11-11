@@ -14,3 +14,4 @@ export interface Project {
   isPlanned?: boolean;
   highlights?: string[];
 }
+

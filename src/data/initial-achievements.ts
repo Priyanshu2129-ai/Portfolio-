@@ -30,3 +30,4 @@ export const initialAchievements: Achievement[] = [
     created_at: new Date().toISOString()
   }
 ];
+

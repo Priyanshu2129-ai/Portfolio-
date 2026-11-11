@@ -48,3 +48,4 @@ export const personalInfo = {
     linkedin: "https://www.linkedin.com/in/priyanshu-prajapati-397b08395/"
   }
 };
+

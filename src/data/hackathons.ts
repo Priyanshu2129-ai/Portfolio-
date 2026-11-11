@@ -54,3 +54,4 @@ export const locaHelpData = {
     { title: "Plumbing Specialist", distance: "3.2 km", status: "Available Now", voiceQuery: "Pipe leak ho gaya hai jaldi aao", category: "Plumbing" }
   ]
 };
+

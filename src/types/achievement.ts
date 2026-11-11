@@ -24,3 +24,4 @@ export interface Achievement {
 }
 
 export type AchievementInput = Omit<Achievement, 'id' | 'created_at' | 'updated_at'>;
+

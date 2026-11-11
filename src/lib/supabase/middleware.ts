@@ -1,6 +1,8 @@
 import { createServerClient, type CookieOptions } from '@supabase/ssr';
 import { NextResponse, type NextRequest } from 'next/server';
 
+const DESIGNATED_ADMIN_EMAIL = 'prajapatipriyanshu@gmail.com';
+
 export async function updateSession(request: NextRequest) {
   let response = NextResponse.next({
     request: {
@@ -12,7 +14,7 @@ export async function updateSession(request: NextRequest) {
   const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 
   if (!supabaseUrl || !supabaseKey) {
-    // If Supabase is not configured yet, allow route handling without crash
+    // If Supabase is not configured yet, allow route handling in fallback mode
     return response;
   }
 
@@ -62,7 +64,8 @@ export async function updateSession(request: NextRequest) {
     data: { user },
   } = await supabase.auth.getUser();
 
-  // Protect admin routes: /admin/dashboard
+  // Strict route protection for /admin/dashboard:
+  // Must be authenticated AND must match the designated admin email
   if (request.nextUrl.pathname.startsWith('/admin/dashboard')) {
     if (!user) {
       const url = request.nextUrl.clone();
@@ -70,13 +73,25 @@ export async function updateSession(request: NextRequest) {
       url.searchParams.set('redirectedFrom', request.nextUrl.pathname);
       return NextResponse.redirect(url);
     }
+
+    const adminEmail = process.env.ADMIN_EMAIL || DESIGNATED_ADMIN_EMAIL;
+    if (user.email?.toLowerCase() !== adminEmail.toLowerCase()) {
+      // User is logged in with an unauthorized account
+      const url = request.nextUrl.clone();
+      url.pathname = '/admin/login';
+      url.searchParams.set('error', 'unauthorized');
+      return NextResponse.redirect(url);
+    }
   }
 
-  // If user is already logged in and visits /admin/login, redirect to /admin/dashboard
+  // If user is already logged in as authorized admin and visits /admin/login, redirect to dashboard
   if (request.nextUrl.pathname === '/admin/login' && user) {
-    const url = request.nextUrl.clone();
-    url.pathname = '/admin/dashboard';
-    return NextResponse.redirect(url);
+    const adminEmail = process.env.ADMIN_EMAIL || DESIGNATED_ADMIN_EMAIL;
+    if (user.email?.toLowerCase() === adminEmail.toLowerCase()) {
+      const url = request.nextUrl.clone();
+      url.pathname = '/admin/dashboard';
+      return NextResponse.redirect(url);
+    }
   }
 
   return response;

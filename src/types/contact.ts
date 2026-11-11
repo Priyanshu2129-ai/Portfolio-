@@ -13,3 +13,4 @@ export interface ContactFormState {
   message: string;
   errors?: Record<string, string>;
 }
+
