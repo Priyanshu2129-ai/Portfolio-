@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="certBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d16"/>
+      <stop offset="100%" stop-color="#121829"/>
+    </linearGradient>
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ff87"/>
+      <stop offset="50%" stop-color="#3b82f6"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="560" rx="16" fill="url(#certBg)"/>
+  
+  <!-- Certificate Border -->
+  <rect x="25" y="25" width="750" height="510" rx="12" fill="none" stroke="url(#borderGrad)" stroke-width="2" stroke-dasharray="8 6"/>
+  <rect x="40" y="40" width="720" height="480" rx="8" fill="#060911" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Watermark Pattern -->
+  <circle cx="400" cy="270" r="140" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="2"/>
+  <circle cx="400" cy="270" r="100" fill="none" stroke="#ffffff" stroke-opacity="0.02" stroke-width="1"/>
+
+  <!-- Header -->
+  <text x="400" y="110" text-anchor="middle" fill="#00ff87" font-family="system-ui" font-size="14" font-weight="700" letter-spacing="3">OFFICIAL PARTICIPATION RECORD</text>
+  <text x="400" y="150" text-anchor="middle" fill="#f8fafc" font-family="system-ui" font-size="28" font-weight="800">NODECRAFT HACKATHON</text>
+  <text x="400" y="180" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="14">Venue: GP Patna-7, Gulzarbagh • Date: 13 October 2026</text>
+
+  <!-- Divider Line -->
+  <line x1="250" y1="210" x2="550" y2="210" stroke="#334155" stroke-width="1"/>
+
+  <!-- Recipient details -->
+  <text x="400" y="245" text-anchor="middle" fill="#64748b" font-family="system-ui" font-size="13">Awarded To</text>
+  <text x="400" y="280" text-anchor="middle" fill="#38bdf8" font-family="system-ui" font-size="24" font-weight="700">PRIYANSHU KUMAR</text>
+  
+  <!-- Project -->
+  <text x="400" y="320" text-anchor="middle" fill="#cbd5e1" font-family="system-ui" font-size="14">Team Project: <tspan font-weight="700" fill="#00ff87">LOCAHELP</tspan></text>
+  <text x="400" y="345" text-anchor="middle" fill="#94a3b8" font-family="system-ui" font-size="13">Role: Frontend Developer &amp; Presentation (PPT) Maker</text>
+
+  <!-- Upload Notification Box -->
+  <rect x="180" y="390" width="440" height="70" rx="10" fill="#0f172a" stroke="#334155" stroke-width="1"/>
+  <circle cx="215" cy="425" r="14" fill="#1e293b"/>
+  <path d="M210 425 L214 429 L221 421" stroke="#00ff87" stroke-width="2" fill="none"/>
+  <text x="245" y="420" fill="#f1f5f9" font-family="system-ui" font-size="12" font-weight="600">Physical Certificate Verified &amp; Preserved</text>
+  <text x="245" y="438" fill="#64748b" font-family="system-ui" font-size="11">Official document scanned copy ready to be uploaded via Admin Dashboard</text>
+</svg>

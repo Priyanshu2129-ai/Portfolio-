@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#080b13"/>
+      <stop offset="50%" stop-color="#0e1322"/>
+      <stop offset="100%" stop-color="#141a2e"/>
+    </linearGradient>
+    <linearGradient id="accentLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff87"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Grid -->
+  <g stroke="#ffffff" stroke-opacity="0.04" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="200" y1="0" x2="200" y2="500"/>
+    <line x1="400" y1="0" x2="400" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+  </g>
+
+  <!-- Browser Shell UI -->
+  <rect x="60" y="50" width="680" height="400" rx="14" fill="#0c101c" stroke="#1e293b" stroke-width="1.5"/>
+  <rect x="60" y="50" width="680" height="42" rx="14" fill="#131929"/>
+  
+  <!-- Window dots -->
+  <circle cx="90" cy="71" r="5.5" fill="#ef4444" opacity="0.8"/>
+  <circle cx="110" cy="71" r="5.5" fill="#f59e0b" opacity="0.8"/>
+  <circle cx="130" cy="71" r="5.5" fill="#10b981" opacity="0.8"/>
+  
+  <!-- Address bar -->
+  <rect x="160" y="60" width="380" height="22" rx="6" fill="#090d16" stroke="#1f293d" stroke-width="1"/>
+  <text x="180" y="75" fill="#64748b" font-family="monospace" font-size="11">https://student-resources-hq1anqjkr.vercel.app</text>
+
+  <!-- Content Mockup -->
+  <!-- Header / Hero inside app -->
+  <rect x="95" y="115" width="220" height="24" rx="4" fill="url(#accentLime)" opacity="0.9"/>
+  <rect x="95" y="148" width="340" height="12" rx="3" fill="#334155"/>
+  <rect x="95" y="168" width="280" height="10" rx="3" fill="#1e293b"/>
+
+  <!-- 3 Resource Cards inside mockup -->
+  <!-- Card 1: PYQ & Notes -->
+  <rect x="95" y="200" width="180" height="200" rx="10" fill="#141a2a" stroke="#253046" stroke-width="1.2"/>
+  <circle cx="130" cy="235" r="16" fill="#1e293b"/>
+  <path d="M124 235 L136 235 M130 229 L130 241" stroke="#00ff87" stroke-width="2"/>
+  <rect x="115" y="265" width="110" height="12" rx="3" fill="#e2e8f0"/>
+  <rect x="115" y="285" width="140" height="8" rx="2" fill="#64748b"/>
+  <rect x="115" y="300" width="90" height="8" rx="2" fill="#475569"/>
+  <rect x="115" y="340" width="140" height="26" rx="6" fill="#00ff87" opacity="0.15" stroke="#00ff87" stroke-width="1"/>
+  <text x="145" y="357" fill="#00ff87" font-family="system-ui" font-size="10" font-weight="600">Access PYQs</text>
+
+  <!-- Card 2: AI Quiz Generator -->
+  <rect x="295" y="200" width="180" height="200" rx="10" fill="#141a2a" stroke="#00ff87" stroke-width="1.2" stroke-opacity="0.4"/>
+  <circle cx="330" cy="235" r="16" fill="#132a24"/>
+  <path d="M326 235 L334 235 M330 231 L330 239" stroke="#00ff87" stroke-width="2"/>
+  <rect x="315" y="265" width="125" height="12" rx="3" fill="#e2e8f0"/>
+  <rect x="315" y="285" width="140" height="8" rx="2" fill="#64748b"/>
+  <rect x="315" y="300" width="110" height="8" rx="2" fill="#475569"/>
+  <rect x="315" y="340" width="140" height="26" rx="6" fill="#00ff87" fill-opacity="0.8"/>
+  <text x="345" y="357" fill="#05060a" font-family="system-ui" font-size="10" font-weight="700">AI Quiz Engine</text>
+
+  <!-- Card 3: Practical Materials -->
+  <rect x="495" y="200" width="180" height="200" rx="10" fill="#141a2a" stroke="#253046" stroke-width="1.2"/>
+  <circle cx="530" cy="235" r="16" fill="#1e293b"/>
+  <rect x="515" y="265" width="115" height="12" rx="3" fill="#e2e8f0"/>
+  <rect x="515" y="285" width="140" height="8" rx="2" fill="#64748b"/>
+  <rect x="515" y="300" width="100" height="8" rx="2" fill="#475569"/>
+  <rect x="515" y="340" width="140" height="26" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="545" y="357" fill="#cbd5e1" font-family="system-ui" font-size="10" font-weight="600">Lab Manuals</text>
+
+  <!-- Badge: LIVE PRODUCTION -->
+  <rect x="620" y="60" width="95" height="22" rx="11" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+  <circle cx="632" cy="71" r="3.5" fill="#10b981"/>
+  <text x="643" y="75" fill="#10b981" font-family="system-ui" font-size="9" font-weight="700" letter-spacing="1">LIVE PROD</text>
+</svg>

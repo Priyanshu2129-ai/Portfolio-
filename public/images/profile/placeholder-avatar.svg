@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="cosmicBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05060a"/>
+      <stop offset="50%" stop-color="#0d111d"/>
+      <stop offset="100%" stop-color="#14192b"/>
+    </linearGradient>
+    <linearGradient id="limeGlow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ff87"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="violetGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ff87" stop-opacity="0.25"/>
+      <stop offset="70%" stop-color="#8b5cf6" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#05060a" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Cosmic Background -->
+  <rect width="400" height="400" rx="40" fill="url(#cosmicBg)"/>
+  
+  <!-- Subtle Grid Lines -->
+  <line x1="50" y1="0" x2="50" y2="400" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="200" y1="0" x2="200" y2="400" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
+  <line x1="350" y1="0" x2="350" y2="400" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="100" x2="400" y2="100" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  <line x1="0" y1="250" x2="400" y2="250" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+
+  <!-- Glowing Aura -->
+  <circle cx="200" cy="180" r="140" fill="url(#halo)"/>
+
+  <!-- Outer Cyber Ring -->
+  <circle cx="200" cy="180" r="110" fill="none" stroke="url(#violetGlow)" stroke-width="1.5" stroke-dasharray="4 8" opacity="0.6"/>
+  <circle cx="200" cy="180" r="100" fill="#0d111d" stroke="#1f2937" stroke-width="2"/>
+
+  <!-- Minimalist Tech Silhouette / Avatar Monogram -->
+  <g transform="translate(140, 115)">
+    <!-- Stylized Head Silhouette -->
+    <path d="M60 10 C32 10 15 32 15 65 C15 95 35 110 60 110 C85 110 105 95 105 65 C105 32 88 10 60 10 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    <!-- Cyber Visor / Tech Accent -->
+    <path d="M30 55 L90 55" stroke="#00ff87" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="60" cy="55" r="3" fill="#00ff87"/>
+  </g>
+
+  <!-- Stylized Shoulders -->
+  <path d="M120 280 C120 235 155 210 200 210 C245 210 280 235 280 280 L120 280 Z" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+
+  <!-- Badges / Tech Status Overlay -->
+  <rect x="70" y="325" width="260" height="42" rx="21" fill="#0b0f19" stroke="#00ff87" stroke-width="1.2" stroke-opacity="0.6"/>
+  
+  <circle cx="95" cy="346" r="5" fill="#00ff87"/>
+  <text x="112" y="351" fill="#e2e8f0" font-family="system-ui, -apple-system, sans-serif" font-size="12" font-weight="600" letter-spacing="1.5">PRIYANSHU KUMAR</text>
+  <text x="282" y="350" fill="#00ff87" font-family="monospace" font-size="10" font-weight="700">DEV</text>
+</svg>

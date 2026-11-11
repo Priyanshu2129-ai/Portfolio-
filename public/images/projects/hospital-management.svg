@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="medBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#060913"/>
+      <stop offset="50%" stop-color="#0a1220"/>
+      <stop offset="100%" stop-color="#0d182b"/>
+    </linearGradient>
+    <linearGradient id="cyanLime" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#00ff87"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="500" rx="20" fill="url(#medBg)"/>
+
+  <!-- Subtle Medical Cross pattern -->
+  <g opacity="0.04" fill="#38bdf8">
+    <path d="M100 80 h20 v-20 h20 v20 h20 v20 h-20 v20 h-20 v-20 h-20 z"/>
+    <path d="M680 120 h20 v-20 h20 v20 h20 v20 h-20 v20 h-20 v-20 h-20 z"/>
+    <path d="M720 380 h20 v-20 h20 v20 h20 v20 h-20 v20 h-20 v-20 h-20 z"/>
+    <path d="M120 400 h20 v-20 h20 v20 h20 v20 h-20 v20 h-20 v-20 h-20 z"/>
+  </g>
+
+  <!-- Hospital Concept Dashboard Container -->
+  <rect x="60" y="50" width="680" height="400" rx="14" fill="#090e19" stroke="#1d283a" stroke-width="1.5"/>
+  <rect x="60" y="50" width="680" height="46" rx="14" fill="#0f172a"/>
+
+  <!-- Logo and Badge -->
+  <g transform="translate(85, 62)">
+    <rect width="22" height="22" rx="6" fill="#0284c7"/>
+    <path d="M7 11 h8 M11 7 v8" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+    <text x="32" y="16" fill="#f8fafc" font-family="system-ui" font-size="13" font-weight="700">AURA HEALTHCARE</text>
+  </g>
+
+  <rect x="580" y="62" width="135" height="22" rx="11" fill="#0284c7" fill-opacity="0.15" stroke="#38bdf8" stroke-width="1"/>
+  <circle cx="594" cy="73" r="3.5" fill="#38bdf8"/>
+  <text x="604" y="77" fill="#38bdf8" font-family="system-ui" font-size="9" font-weight="700" letter-spacing="1">CONCEPT PROJECT</text>
+
+  <!-- Mockup Main Stage -->
+  <!-- Left Side: Doctor Directory & Specialties -->
+  <rect x="90" y="120" width="370" height="180" rx="10" fill="#111a2e" stroke="#1e2c45" stroke-width="1"/>
+  <text x="110" y="148" fill="#f1f5f9" font-family="system-ui" font-size="13" font-weight="700">Digital Access & Doctor Schedules</text>
+  <text x="110" y="166" fill="#94a3b8" font-family="system-ui" font-size="10">Zero-queue appointment inquiries & department routing</text>
+
+  <!-- Doctor mini card 1 -->
+  <rect x="110" y="185" width="330" height="45" rx="8" fill="#16223b" stroke="#253554" stroke-width="1"/>
+  <circle cx="132" cy="207" r="14" fill="#253554"/>
+  <text x="156" y="202" fill="#e2e8f0" font-family="system-ui" font-size="11" font-weight="600">Cardiology & Vascular Care</text>
+  <text x="156" y="217" fill="#38bdf8" font-family="system-ui" font-size="9">Slots Available • Virtual Intake Ready</text>
+
+  <!-- Doctor mini card 2 -->
+  <rect x="110" y="240" width="330" height="45" rx="8" fill="#16223b" stroke="#253554" stroke-width="1"/>
+  <circle cx="132" cy="262" r="14" fill="#253554"/>
+  <text x="156" y="257" fill="#e2e8f0" font-family="system-ui" font-size="11" font-weight="600">Neurology & Diagnostics</text>
+  <text x="156" y="272" fill="#00ff87" font-family="system-ui" font-size="9">Instant Consultation Request</text>
+
+  <!-- Right Side: Emergency & Virtual Tour Teaser -->
+  <rect x="480" y="120" width="230" height="85" rx="10" fill="#22151d" stroke="#7f1d1d" stroke-width="1"/>
+  <circle cx="505" cy="148" r="10" fill="#ef4444" fill-opacity="0.3"/>
+  <circle cx="505" cy="148" r="4" fill="#ef4444"/>
+  <text x="525" y="144" fill="#fca5a5" font-family="system-ui" font-size="11" font-weight="700">24/7 Emergency Line</text>
+  <text x="525" y="160" fill="#fda4af" font-family="system-ui" font-size="9">Instant trauma dispatch hotline</text>
+
+  <rect x="480" y="215" width="230" height="85" rx="10" fill="#12182c" stroke="#312e81" stroke-width="1"/>
+  <text x="500" y="240" fill="#c7d2fe" font-family="system-ui" font-size="11" font-weight="700">Virtual Hospital Tour</text>
+  <text x="500" y="256" fill="#818cf8" font-family="system-ui" font-size="9">360° Department View (Roadmap)</text>
+  <rect x="500" y="270" width="80" height="18" rx="4" fill="#4338ca" fill-opacity="0.3" stroke="#6366f1" stroke-width="1"/>
+  <text x="512" y="282" fill="#a5b4fc" font-family="system-ui" font-size="8" font-weight="700">PLANNED</text>
+
+  <!-- Bottom workflow stats bar -->
+  <rect x="90" y="320" width="620" height="95" rx="10" fill="#0c1322" stroke="#1d2a41" stroke-width="1"/>
+  <text x="110" y="345" fill="#f8fafc" font-family="system-ui" font-size="12" font-weight="600">Core Digital Access Architecture</text>
+  
+  <rect x="110" y="360" width="130" height="38" rx="6" fill="#141c2f"/>
+  <text x="120" y="376" fill="#94a3b8" font-family="system-ui" font-size="9">Queue Elimination</text>
+  <text x="120" y="391" fill="#38bdf8" font-family="system-ui" font-size="11" font-weight="700">Direct Online</text>
+
+  <rect x="255" y="360" width="130" height="38" rx="6" fill="#141c2f"/>
+  <text x="265" y="376" fill="#94a3b8" font-family="system-ui" font-size="9">Specialist Index</text>
+  <text x="265" y="391" fill="#00ff87" font-family="system-ui" font-size="11" font-weight="700">Categorized</text>
+
+  <rect x="400" y="360" width="140" height="38" rx="6" fill="#141c2f"/>
+  <text x="410" y="376" fill="#94a3b8" font-family="system-ui" font-size="9">Data Infrastructure</text>
+  <text x="410" y="391" fill="#c084fc" font-family="system-ui" font-size="11" font-weight="700">Supabase + React</text>
+</svg>
