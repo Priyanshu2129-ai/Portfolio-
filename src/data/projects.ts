@@ -42,41 +42,37 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    id: "hospital-management-system",
-    title: "Hospital Management System",
-    tagline: "Digital Hospital Access & Patient Information Architecture Concept",
-    category: "Personal Concept Project",
-    description: "A digital hospital-access concept designed to make hospital information and basic services easier to access, reducing the need for patients to stand in long queues just to obtain information or initiate common requests.",
-    longDescription: "A conceptual digital healthcare portal envisioned to streamline patient access, directory navigation, and emergency preparedness. Focuses on intuitive user workflows, clarity of departmental scheduling, and transparent doctor consultation availability without real-world healthcare provider integration.",
+    id: "citycare-hospital-management",
+    title: "CityCare Hospital Management System",
+    tagline: "A Centralized Digital Platform for Hospital Operations",
+    category: "Live Project",
+    description: "A hospital management web application designed to organize key hospital workflows, including patient, doctor, appointment and billing management, through a centralized interface.",
+    longDescription: "CityCare is a practical hospital management project focused on making everyday hospital administration more organized. It includes an administrative interface for managing core hospital records and workflows, with a persistent backend powered by MongoDB.",
     thumbnail: "/images/projects/hospital-management.svg",
     features: [
-      "Modern patient-first landing page",
-      "Comprehensive hospital information architecture",
-      "Departments and clinical specialties index",
-      "Doctors directory with specialty filtering",
-      "Detailed doctor profiles & credentials",
-      "Online appointment booking workflow concept",
-      "Patient contact & inquiry form",
-      "High-visibility emergency contact information",
-      "Hospital location guidance and interactive map view",
-      "Frequently Asked Questions (FAQ) repository",
-      "Planned virtual hospital tour (concept roadmap)"
+      "Centralized hospital administration dashboard",
+      "Patient record management",
+      "Doctor management",
+      "Appointment management",
+      "Billing management",
+      "Admin authentication and session management",
+      "MongoDB-backed data storage"
     ],
     technologies: [
-      "React",
-      "JavaScript",
       "HTML",
       "CSS",
-      "Supabase",
-      "Vercel"
+      "JavaScript",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Render"
     ],
-    developmentInfo: "Individually developed frontend concept project. Public GitHub repository is not yet published. Marked virtual tour as planned roadmap.",
-    isPlanned: false, // Core concept built, virtual tour planned
+    developmentInfo: "Individually developed hospital management web application with a Node.js and Express backend, MongoDB persistence, and live deployment on Render.",
+    liveUrl: "https://citycare-l61z.onrender.com/",
     highlights: [
-      "Individually designed concept",
-      "Queue-reduction UX focus",
-      "Virtual tour on product roadmap"
+      "Live production deployment",
+      "MongoDB-backed persistence",
+      "Hospital administration workflows"
     ]
   }
 ];
-
